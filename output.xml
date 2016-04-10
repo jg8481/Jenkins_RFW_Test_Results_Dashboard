@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160207 03:28:15.635" generator="Robot 2.9.2 (Python 2.7.11 on win32)">
+<suite source="C:\Robot_Framework_Selenium2\Working_Script_Templates\Dashboard_Analysis\QA_Dashboards_Automated_Analysis.txt" id="s1" name="QA Dashboards Automated Analysis">
+<test id="s1-t1" name="Go to the Cross-Platform Feature Test Report dashboard on BlueMix">
+<kw name="Open Browser to Cross-Platform Feature Test Report" library="analysis_resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${CROSS_PLATFORM_TESTING_URL}</arg>
+</arguments>
+<msg timestamp="20160207 03:28:15.776" level="INFO">Opening browser 'firefox' to base url 'http://qa-ci-dashboard3-joshua-gorospe.mybluemix.net/'</msg>
+<status status="PASS" endtime="20160207 03:28:20.930" starttime="20160207 03:28:15.776"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160207 03:28:21.024" starttime="20160207 03:28:20.930"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160207 03:28:21.026" starttime="20160207 03:28:21.025"></status>
+</kw>
+<status status="PASS" endtime="20160207 03:28:21.027" starttime="20160207 03:28:15.760"></status>
+</kw>
+<status status="PASS" endtime="20160207 03:28:21.027" critical="yes" starttime="20160207 03:28:15.760"></status>
+</test>
+<test id="s1-t2" name="Check the status of the most recent Cross-Platform Feature Test run">
+<kw name="A Python automation framework analyzed the Cross-Platform Feature Test Report dashboard" library="analysis_resource">
+<kw name="Set Test Documentation" library="BuiltIn">
+<doc>Sets documentation for the current test case.</doc>
+<arguments>
+<arg>This step will analyze the results of the Cross-Platform Feature Test run (it tests Windows 10 Edge browser, Mac OS X Safari browser, and iPhone 6 resolution) displayed here http://qa-ci-dashboard3-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of passes is not displayed as "Pass 14" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the Cross-Platform Feature Test run and it should be investigated. All of these tests are recorded and uploaded to http://screencast-o-matic.com/u/UxC/ci please ask Joshua Gorospe for the password to log into the channel. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</arg>
+</arguments>
+<msg timestamp="20160207 03:28:21.030" level="INFO">Set test documentation to:
+This step will analyze the results of the Cross-Platform Feature Test run (it tests Windows 10 Edge browser, Mac OS X Safari browser, and iPhone 6 resolution) displayed here http://qa-ci-dashboard3-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of passes is not displayed as "Pass 14" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the Cross-Platform Feature Test run and it should be investigated. All of these tests are recorded and uploaded to http://screencast-o-matic.com/u/UxC/ci please ask Joshua Gorospe for the password to log into the channel. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</msg>
+<status status="PASS" endtime="20160207 03:28:21.031" starttime="20160207 03:28:21.030"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20160207 03:28:22.051" starttime="20160207 03:28:21.031"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Pass 14</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160207 03:28:25.439" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20160207 03:28:25.440" starttime="20160207 03:28:24.340"></status>
+</kw>
+<msg timestamp="20160207 03:28:25.443" level="FAIL">Text 'Pass 14' did not appear in 2 seconds</msg>
+<status status="FAIL" endtime="20160207 03:28:25.445" starttime="20160207 03:28:22.052"></status>
+</kw>
+<status status="FAIL" endtime="20160207 03:28:25.446" starttime="20160207 03:28:21.029"></status>
+</kw>
+<doc>This step will analyze the results of the Cross-Platform Feature Test run (it tests Windows 10 Edge browser, Mac OS X Safari browser, and iPhone 6 resolution) displayed here http://qa-ci-dashboard3-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of passes is not displayed as "Pass 14" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the Cross-Platform Feature Test run and it should be investigated. All of these tests are recorded and uploaded to http://screencast-o-matic.com/u/UxC/ci please ask Joshua Gorospe for the password to log into the channel. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</doc>
+<tags>
+<tag>Windows 10 Edge browser, Mac OS X Safari browser, iPhone 6 resolution (Chrome Developer Tools) tests</tag>
+</tags>
+<status status="FAIL" endtime="20160207 03:28:25.448" critical="yes" starttime="20160207 03:28:21.028">Text 'Pass 14' did not appear in 2 seconds</status>
+</test>
+<test id="s1-t3" name="Go to the Smoke Test Automation Test Results Summary dashboard on BlueMix">
+<kw name="Open Browser to Smoke Test Automation Test Results Summary" library="analysis_resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SMOKE_TESTING_URL}</arg>
+</arguments>
+<msg timestamp="20160207 03:28:25.461" level="INFO">Opening browser 'firefox' to base url 'http://qa-ci-dashboard1-joshua-gorospe.mybluemix.net/'</msg>
+<status status="PASS" endtime="20160207 03:28:35.242" starttime="20160207 03:28:25.460"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160207 03:28:36.364" starttime="20160207 03:28:35.247"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160207 03:28:36.368" starttime="20160207 03:28:36.365"></status>
+</kw>
+<status status="PASS" endtime="20160207 03:28:36.369" starttime="20160207 03:28:25.458"></status>
+</kw>
+<status status="PASS" endtime="20160207 03:28:36.371" critical="yes" starttime="20160207 03:28:25.454"></status>
+</test>
+<test id="s1-t4" name="Check the status of the most recent Smoke Test Automation Test Results Summary">
+<kw name="A Python automation framework analyzed the Smoke Test Automation Test Results Summary dashboard" library="analysis_resource">
+<kw name="Set Test Documentation" library="BuiltIn">
+<doc>Sets documentation for the current test case.</doc>
+<arguments>
+<arg>This step will analyze the results of the Cell 2, Cell 3 and Cell 4 Smoke Test Automation run displayed here http://qa-ci-dashboard1-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of failures is not displayed as "Steps Failed : 0" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the Cell 2, Cell 3 and Cell 4 Smoke Test Automation run and it should be investigated. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</arg>
+</arguments>
+<msg timestamp="20160207 03:28:36.382" level="INFO">Set test documentation to:
+This step will analyze the results of the Cell 2, Cell 3 and Cell 4 Smoke Test Automation run displayed here http://qa-ci-dashboard1-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of failures is not displayed as "Steps Failed : 0" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the Cell 2, Cell 3 and Cell 4 Smoke Test Automation run and it should be investigated. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</msg>
+<status status="PASS" endtime="20160207 03:28:36.383" starttime="20160207 03:28:36.381"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20160207 03:28:38.427" starttime="20160207 03:28:36.384"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Steps Failed : 0</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160207 03:28:41.901" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20160207 03:28:41.902" starttime="20160207 03:28:40.712"></status>
+</kw>
+<msg timestamp="20160207 03:28:41.905" level="FAIL">Text 'Steps Failed : 0' did not appear in 2 seconds</msg>
+<status status="FAIL" endtime="20160207 03:28:41.906" starttime="20160207 03:28:38.428"></status>
+</kw>
+<status status="FAIL" endtime="20160207 03:28:41.907" starttime="20160207 03:28:36.380"></status>
+</kw>
+<doc>This step will analyze the results of the Cell 2, Cell 3 and Cell 4 Smoke Test Automation run displayed here http://qa-ci-dashboard1-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of failures is not displayed as "Steps Failed : 0" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the Cell 2, Cell 3 and Cell 4 Smoke Test Automation run and it should be investigated. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</doc>
+<tags>
+<tag>Cell 2, Cell 3, Cell 4 smoke tests</tag>
+</tags>
+<status status="FAIL" endtime="20160207 03:28:41.910" critical="yes" starttime="20160207 03:28:36.376">Text 'Steps Failed : 0' did not appear in 2 seconds</status>
+</test>
+<test id="s1-t5" name="Go to the IRAC Projects and C2C User Story Test Results Summary dashboard on BlueMix">
+<kw name="Open Browser to IRAC Projects and C2C User Story Test Results Summary" library="analysis_resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${PROJECT_TESTING_URL}</arg>
+</arguments>
+<msg timestamp="20160207 03:28:41.924" level="INFO">Opening browser 'firefox' to base url 'http://qa-ci-dashboard2-joshua-gorospe.mybluemix.net/'</msg>
+<status status="PASS" endtime="20160207 03:28:50.835" starttime="20160207 03:28:41.922"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160207 03:28:51.902" starttime="20160207 03:28:50.836"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160207 03:28:51.906" starttime="20160207 03:28:51.903"></status>
+</kw>
+<status status="PASS" endtime="20160207 03:28:51.908" starttime="20160207 03:28:41.920"></status>
+</kw>
+<status status="PASS" endtime="20160207 03:28:51.910" critical="yes" starttime="20160207 03:28:41.916"></status>
+</test>
+<test id="s1-t6" name="Check the Status of the most recent IRAC Projects and C2C User Story Test Results Summary">
+<kw name="A Python automation framework analyzed the IRAC Projects and C2C User Story Test Results Summary dashboard" library="analysis_resource">
+<kw name="Set Test Documentation" library="BuiltIn">
+<doc>Sets documentation for the current test case.</doc>
+<arguments>
+<arg>This step will analyze the results of the IRAC Projects and C2C User Story tests displayed here http://qa-ci-dashboard2-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of failures is not displayed as "Steps Failed : 0" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the IRAC Projects and C2C User Story tests and it should be investigated. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</arg>
+</arguments>
+<msg timestamp="20160207 03:28:51.924" level="INFO">Set test documentation to:
+This step will analyze the results of the IRAC Projects and C2C User Story tests displayed here http://qa-ci-dashboard2-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of failures is not displayed as "Steps Failed : 0" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the IRAC Projects and C2C User Story tests and it should be investigated. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</msg>
+<status status="PASS" endtime="20160207 03:28:51.926" starttime="20160207 03:28:51.921"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20160207 03:28:55.051" starttime="20160207 03:28:51.927"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Steps Failed : 0</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20160207 03:28:58.518" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20160207 03:28:58.520" starttime="20160207 03:28:57.333"></status>
+</kw>
+<msg timestamp="20160207 03:28:58.522" level="FAIL">Text 'Steps Failed : 0' did not appear in 2 seconds</msg>
+<status status="FAIL" endtime="20160207 03:28:58.523" starttime="20160207 03:28:55.052"></status>
+</kw>
+<status status="FAIL" endtime="20160207 03:28:58.525" starttime="20160207 03:28:51.918"></status>
+</kw>
+<doc>This step will analyze the results of the IRAC Projects and C2C User Story tests displayed here http://qa-ci-dashboard2-joshua-gorospe.mybluemix.net/ . If this step detects that the total number of failures is not displayed as "Steps Failed : 0" in the BlueMix dashboard, then the Status message in this step will display a red "FAIL" message. This means that failures were found by the IRAC Projects and C2C User Story tests and it should be investigated. In the future, an automated process will monitor this dashboard and send out notifications to the QA Team.</doc>
+<tags>
+<tag>IRAC Project tests and Chroming User Story tests</tag>
+</tags>
+<status status="FAIL" endtime="20160207 03:28:58.527" critical="yes" starttime="20160207 03:28:51.915">Text 'Steps Failed : 0' did not appear in 2 seconds</status>
+</test>
+<status status="FAIL" endtime="20160207 03:28:58.535" starttime="20160207 03:28:15.635"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="3">Critical Tests</stat>
+<stat fail="3" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Cell 2, Cell 3, Cell 4 smoke tests</stat>
+<stat fail="1" pass="0">IRAC Project tests and Chroming User Story tests</stat>
+<stat fail="1" pass="0">Windows 10 Edge browser, Mac OS X Safari browser, iPhone 6 resolution (Chrome Developer Tools) tests</stat>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="QA Dashboards Automated Analysis" pass="3">QA Dashboards Automated Analysis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
